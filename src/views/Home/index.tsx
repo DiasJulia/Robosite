@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar} from '../../components';
+import { Navbar, Carousel } from '../../components';
 
 import { Container, FirstSection, ThirdSection, RoundLogoImg, RobotImg, RobotImg2, Row, FourthSection, Div, RowItem } from './styles';
 import { RoundLogo, RobotPhotos, Trophy, MagGlasses, Chip, Trophy2, Upload, People } from '../../assets';
@@ -16,6 +16,7 @@ const HomePage: React.FC = () => (
       </div>
       <RobotImg src={ RobotPhotos } alt="" />
     </FirstSection>
+    <Carousel/>
     <ThirdSection>
       <h2>O que fazemos</h2>
       <Row>

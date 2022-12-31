@@ -3,7 +3,7 @@ import { Container, Nav, LogoImg } from './styles';
 
 import { Logo } from '../../assets';
 
-const HomePage: React.FC = () => (
+const Navbar: React.FC = () => (
     <Container>
         <LogoImg src={Logo} alt="Logo do Robocin" />
         <Nav>
@@ -18,4 +18,4 @@ const HomePage: React.FC = () => (
     </Container>
 )
 
-export default HomePage
+export default Navbar
