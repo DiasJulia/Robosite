@@ -117,3 +117,51 @@ export const RobotImg2 = styled.img`
     margin-left: 2rem;
     width: 45%;
 `
+
+export const FifthSection = styled.section`
+    text-align: center;
+    padding: 56px 4rem;
+    background: radial-gradient(82.29% 124.05% at 25.07% 142.13%, rgba(84, 236, 126, 0.2) 21.26%, rgba(93, 233, 132, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #F3F3F3;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.08);
+
+    h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1A3C21;
+    }
+`
+
+export const VisionCard = styled.div`
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    max-width: 350px;
+    margin: 50px;
+
+    padding: 2em;
+
+    h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #1A3C21;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: #606060;
+    }
+
+    img{
+        margin: 25px 0;
+    }
+`

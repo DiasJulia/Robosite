@@ -1,8 +1,8 @@
 import React from 'react'
 import { Navbar, Carousel } from '../../components';
 
-import { Container, FirstSection, ThirdSection, RoundLogoImg, RobotImg, RobotImg2, Row, FourthSection, Div, RowItem } from './styles';
-import { RoundLogo, RobotPhotos, Trophy, MagGlasses, Chip, Trophy2, Upload, People } from '../../assets';
+import { Container, FirstSection, ThirdSection, RoundLogoImg, RobotImg, RobotImg2, Row, FourthSection, Div, RowItem, FifthSection, VisionCard } from './styles';
+import { RoundLogo, RobotPhotos, Trophy, MagGlasses, Chip, Trophy2, Upload, People, MissaoIcon, VisaoIcon, ValoresIcon } from '../../assets';
 import Footer from '../../components/Footer';
 
 const HomePage: React.FC = () => (
@@ -59,6 +59,26 @@ const HomePage: React.FC = () => (
         </div>
       </Row>
     </FourthSection>
+    <FifthSection>
+      <h2>Nossas convicções</h2>
+      <Row>
+        <VisionCard>
+          <h3>Missão</h3>
+          <img src={ MissaoIcon } alt="" />
+          <p>Bom dia, esses são as coisas dessa caixa de texto. Ela possui um ótimo espaço para escrever.</p>
+        </VisionCard>
+        <VisionCard>
+          <h3>Visão</h3>
+          <img src={ VisaoIcon } alt="" />
+          <p>Bom dia, esses são as coisas dessa caixa de texto. Ela possui um ótimo espaço para escrever.</p>
+        </VisionCard>
+        <VisionCard>
+          <h3>Valores</h3>
+          <img src={ ValoresIcon } alt="" />
+          <p>Bom dia, esses são as coisas dessa caixa de texto. Ela possui um ótimo espaço para escrever.</p>
+        </VisionCard>
+      </Row>
+    </FifthSection>
     <Footer/>
   </Container>
   </div>
