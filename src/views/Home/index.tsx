@@ -3,6 +3,7 @@ import { Navbar, Carousel } from '../../components';
 
 import { Container, FirstSection, ThirdSection, RoundLogoImg, RobotImg, RobotImg2, Row, FourthSection, Div, RowItem } from './styles';
 import { RoundLogo, RobotPhotos, Trophy, MagGlasses, Chip, Trophy2, Upload, People } from '../../assets';
+import Footer from '../../components/Footer';
 
 const HomePage: React.FC = () => (
   <div>
@@ -58,6 +59,7 @@ const HomePage: React.FC = () => (
         </div>
       </Row>
     </FourthSection>
+    <Footer/>
   </Container>
   </div>
 )
