@@ -19,6 +19,14 @@ import LogoYouTube from './logo-youtube.svg';
 import LogoLinkedIn from './logo-linkedin.svg';
 import LogoGithub from './logo-github.svg';
 
+import LogoHSBS from './logo-hsbs.svg';
+import LogoCin from './logo-cin.svg';
+import LogoMoura from './logo-moura.svg';
+import LogoVeroli from './logo-veroli.svg';
+import LogoMicrosoft from './logo-microsoft.svg';
+import LogoCesar from './logo-cesar.svg';
+
+
 import ValoresIcon from './valores-icon.svg';
 import VisaoIcon from './visao-icon.svg';
 import MissaoIcon from './missao-icon.svg';
@@ -27,5 +35,39 @@ import Arrow1 from './arrow1.svg';
 import Arrow2 from './arrow2.svg';
 
 import Background1 from './background-1.svg';
+import Background2 from './background-2.png';
+import ModalBackground from './modal-background.png';
 
-export { Logo, LogoHorizontal, RoundLogo, RobotPhotos, Trophy, MagGlasses, Chip, People, Upload, Trophy2, Background1, SlidePic1, SlidePic2, SlidePic3, Arrow1, Arrow2, LogoFacebook, LogoInstagram, LogoYouTube, LogoLinkedIn, LogoGithub, ValoresIcon, VisaoIcon, MissaoIcon };
+export { Logo, 
+    LogoHorizontal, 
+    RoundLogo, 
+    RobotPhotos, 
+    Trophy, 
+    MagGlasses, 
+    Chip, 
+    People, 
+    Upload, 
+    Trophy2, 
+    Background1, 
+    Background2,
+    ModalBackground, 
+    SlidePic1, 
+    SlidePic2, 
+    SlidePic3, 
+    Arrow1, 
+    Arrow2, 
+    LogoFacebook, 
+    LogoInstagram, 
+    LogoYouTube, 
+    LogoLinkedIn, 
+    LogoGithub, 
+    ValoresIcon, 
+    VisaoIcon, 
+    MissaoIcon,
+    LogoHSBS,
+    LogoCin,
+    LogoMoura,
+    LogoVeroli,
+    LogoMicrosoft,
+    LogoCesar
+};

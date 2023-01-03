@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Background1 } from '../../assets';
+import { Background1, Background2 } from '../../assets';
 
 type DivProps = {
     width?: string;
@@ -164,4 +164,28 @@ export const VisionCard = styled.div`
     img{
         margin: 25px 0;
     }
+`
+
+export const SixthSecion = styled.section`
+    text-align: center;
+    padding: 56px 4rem;
+    padding-bottom: 150px;
+    background: url(${Background2}) no-repeat center bottom;
+    background-size: 100% 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 55%;
+    }
+`;
+
+export const MoreButton = styled.button`
+    background: #469C57;
+    border-radius: 20px;
+    border: none;
 `

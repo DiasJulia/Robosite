@@ -1,12 +1,35 @@
-import React from 'react'
-import { Navbar, Carousel } from '../../components';
+import React, {useState} from 'react'
+import { Navbar, Carousel, Footer, Modal } from '../../components';
+import Content from './content.json';
 
-import { Container, FirstSection, ThirdSection, RoundLogoImg, RobotImg, RobotImg2, Row, FourthSection, Div, RowItem, FifthSection, VisionCard } from './styles';
-import { RoundLogo, RobotPhotos, Trophy, MagGlasses, Chip, Trophy2, Upload, People, MissaoIcon, VisaoIcon, ValoresIcon } from '../../assets';
-import Footer from '../../components/Footer';
+import { Container, FirstSection, ThirdSection, RoundLogoImg, RobotImg, RobotImg2, Row, FourthSection, Div, RowItem, FifthSection, VisionCard, SixthSecion, MoreButton } from './styles';
+import { RoundLogo, RobotPhotos, Trophy, MagGlasses, Chip, Trophy2, Upload, 
+  People, 
+  MissaoIcon, 
+  VisaoIcon,
+  ValoresIcon, 
+  LogoHSBS,
+  LogoCin,
+  LogoMoura,
+  LogoVeroli,
+  LogoMicrosoft,
+  LogoCesar } from '../../assets';
 
-const HomePage: React.FC = () => (
+const HomePage: React.FC = () => {
+
+  const [showModal, setShowModal] = useState(false);
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+
+  const SaibaMais = (index: number) => {
+      setTitle(Content[index].title);
+      setContent(Content[index].content);
+      setShowModal(prev => !prev);
+  };
+
+  return(
   <div>
+    <Modal showModal={showModal} setShowModal={setShowModal} title={title} content={content}></Modal>
   <Navbar/>
   <Container>
     <FirstSection>
@@ -25,16 +48,19 @@ const HomePage: React.FC = () => (
           <img src={ Trophy } alt="Desenho de Troféu" />
           <h3>Competições</h3>
           <p>Nós participamos de diversas competições, como a RoboCup, a IRONCup e a LARC.</p>
+          <MoreButton onClick={() => {SaibaMais(0)}}>Saiba mais</MoreButton>
         </RowItem>
         <RowItem>
           <img src={ MagGlasses } alt="Desenho de Lupa" />
           <h3>Pesquisa</h3>
           <p>Professores e estudantes pesquisando dentro dos problemas da robótica.</p>
+          <MoreButton onClick={() => {SaibaMais(1)}}>Saiba mais</MoreButton>
         </RowItem>
         <RowItem>
           <img src={ Chip } alt="Desenho de Processador" />
           <h3>Desenvolvimento</h3>
           <p>Nós projetamos e desenvolvemos a eletrônica, a mecânica e a inteligência dos robôs.</p>
+          <MoreButton onClick={() => {SaibaMais(2)}}>Saiba mais</MoreButton>
         </RowItem>
       </Row>
     </ThirdSection>
@@ -79,9 +105,23 @@ const HomePage: React.FC = () => (
         </VisionCard>
       </Row>
     </FifthSection>
+    <SixthSecion>
+      <h2>Nossos patrocinadores</h2>
+      <p>Você pode ser o próximo! Nos ajude a crescer mais ainda e faça parte do nosso time, manda um Email aí!</p>
+      <h3>robocin@cin.ufpe.br</h3>
+      <Row>
+        <img src={LogoCesar} alt="" />
+        <img src={LogoMicrosoft} alt="" />
+        <img src={LogoVeroli} alt="" />
+        <img src={LogoCin} alt="" />
+        <img src={LogoMoura} alt="" />
+        <img src={LogoHSBS} alt="" />
+      </Row>
+    </SixthSecion>
     <Footer/>
   </Container>
   </div>
-)
+);
+}
 
 export default HomePage
