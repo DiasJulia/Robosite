@@ -5,6 +5,10 @@ type DivProps = {
     width?: string;
 }
 
+type RowProps = {
+    justifyContent?: string;
+}
+
 export const Container = styled.div`
     margin-top: 85px;`
 ;
@@ -77,10 +81,10 @@ export const RowItem = styled.div`
         min-width: 300px;
 `
 
-export const Row = styled.div`
+export const Row = styled.div<RowProps>`
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: ${(props) => props.justifyContent || 'space-between'};
     width: 100%;
 `
 
@@ -116,6 +120,8 @@ export const FourthSection = styled.section`
 export const RobotImg2 = styled.img`
     margin-left: 2rem;
     width: 45%;
+
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.08));
 `
 
 export const FifthSection = styled.section`
@@ -188,4 +194,18 @@ export const MoreButton = styled.button`
     background: #469C57;
     border-radius: 20px;
     border: none;
+`
+
+export const Badge = styled.div`
+    background: linear-gradient(276.57deg, rgba(70, 156, 87, 0.8) 15.82%, rgba(0, 0, 0, 0) 147.73%), #606060;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    padding: 8px;
+    width: 180px;
+    color: #FFFFFF;
+    margin: 0 60px;
 `

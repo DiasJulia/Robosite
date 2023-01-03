@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Navbar, Carousel, Footer, Modal } from '../../components';
 import Content from './content.json';
 
-import { Container, FirstSection, ThirdSection, RoundLogoImg, RobotImg, RobotImg2, Row, FourthSection, Div, RowItem, FifthSection, VisionCard, SixthSecion, MoreButton } from './styles';
+import { Container, FirstSection, ThirdSection, RoundLogoImg, RobotImg, RobotImg2, Row, FourthSection, Div, RowItem, FifthSection, VisionCard, SixthSecion, MoreButton, Badge } from './styles';
 import { RoundLogo, RobotPhotos, Trophy, MagGlasses, Chip, Trophy2, Upload, 
   People, 
   MissaoIcon, 
@@ -70,18 +70,22 @@ const HomePage: React.FC = () => {
         <p>RobôCIn é um grupo de pesquisa e desenvolvimento do Centro de Informática da UFPE, que utiliza a robótica para desenvolver soluções. O grupo foi criado em 2015 por 12 estudantes de Engenharia da Computação com ajuda de dois professores. Edna Barros e Hansenclever Bassani. Desenvolver soluções utilizando Inteligência Artificial, Visão Computacional, Mecânica e Eletrônica aplicados na robótica.</p>
         <RobotImg2 src={ RobotPhotos } alt="" />
       </Row>
-      <Row>
+      <br />
+      <Row justifyContent="center">
         <div>
           <img src={ Trophy2 } alt="Desenho de troféu" />
           <h4>Premiações</h4>
+          <Badge>32</Badge>
         </div>
         <div>
           <img src={ Upload } alt="Desenho de Upload" />
           <h4>Artigos publicados</h4>
+          <Badge>28</Badge>
         </div>
         <div>
           <img src={ People } alt="Desenho de Upload" />
           <h4>Colaboradores</h4>
+          <Badge>89</Badge>
         </div>
       </Row>
     </FourthSection>
