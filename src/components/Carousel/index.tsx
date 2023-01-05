@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import { Container, SliderStyled, Slide, Filter, Content, Arrow } from './styles';
 
 import { SlidePic1, SlidePic2, SlidePic3, Arrow1, Arrow2 } from '../../assets';

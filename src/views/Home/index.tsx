@@ -30,7 +30,6 @@ const HomePage: React.FC = () => {
   return(
   <div>
     <Modal showModal={showModal} setShowModal={setShowModal} title={title} content={content}></Modal>
-  <Navbar/>
   <Container>
     <FirstSection>
       <RoundLogoImg src={ RoundLogo } alt="" />
