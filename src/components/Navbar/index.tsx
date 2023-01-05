@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Container, Nav, LogoImg } from './styles';
 
 import { Logo } from '../../assets';
 
-const Navbar: React.FC = () => (
+const Navbar: React.FC = () => {
+    const [page, setPage] = useState(window.location.pathname.split('/')[1] || 'home');
+    
+    return (
     <Container>
         <LogoImg src={Logo} alt="Logo do Robocin" />
         <Nav>
@@ -17,5 +20,6 @@ const Navbar: React.FC = () => (
         </Nav>
     </Container>
 )
+}
 
 export default Navbar
