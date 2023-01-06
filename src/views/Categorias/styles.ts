@@ -4,6 +4,14 @@ type RowProps = {
     justifyContent?: string;
 }
 
+type ImgProps = {
+    BackgroundImg: string;
+};
+
+type ContentProps = {
+    width?: string
+}
+
 export const Container = styled.div`
     margin-top: 85px;
 `;
@@ -43,6 +51,35 @@ export const Row = styled.div<RowProps>`
     width: 100%;
 `;
 
+export const BadgeContainer = styled.div`
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-of-type(1){
+        justify-content: flex-start;
+        height: 160px;
+        div{
+            margin-left: 30px;
+        }
+    }
+
+    &:nth-of-type(4){
+        justify-content: flex-end;
+        height: 160px;
+        div{
+            margin-right: 30px;
+        }
+    }
+
+    img{
+        position: absolute;
+        align-self: flex-end;
+    }
+    
+`;
+
 export const Badge = styled.div`
     background: linear-gradient(281.32deg, rgba(48, 48, 48, 0.6) -9.93%, rgba(0, 0, 0, 0) 40.16%), #469C57;
     box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.09), 0px 3px 7px rgba(0, 0, 0, 0.1);
@@ -53,7 +90,8 @@ export const Badge = styled.div`
     font-size: 20px;
     line-height: 27px;
 
-    width: 175px;
+    width: 160px;
+    min-height: 75px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -61,9 +99,11 @@ export const Badge = styled.div`
 
     padding: 14px 18px;
 
-    margin: 0 90px;
+    margin: 0 60px;
 
     color: #FFFFFF;
+
+    z-index: 2;
 `;
 
 export const Details = styled.details`
@@ -85,7 +125,7 @@ export const Details = styled.details`
 `
 
 export const TableLine = styled.div`
-    height: 48px;
+    min-height: 48px;
     width: 100%;
 
     display: flex;
@@ -120,3 +160,79 @@ export const TableLine = styled.div`
         border-radius: 0 0 24px 24px;
     }
 `;
+
+export const CategoriaContainer = styled.div<ContentProps>`
+    width: ${(props)=> props.width || "50%"};
+    h2{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        text-transform: uppercase;
+
+        color: #469C57;
+        display: inline;
+        margin-left: 12px;
+    }
+
+    h3{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: uppercase;
+        display: inline;
+        color: #469C57;
+        margin-left: 20px;
+    }
+
+    h4{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #459B56;
+
+        display: inline;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+
+        text-align: justify;
+        color: #606060;
+    }
+`;
+
+export const CategoriaImg = styled.div<ImgProps>`
+    filter: drop-shadow(-15px 40px 17px rgba(0, 0, 0, 0.01)) drop-shadow(-9px 22px 14px rgba(0, 0, 0, 0.05)) drop-shadow(-4px 10px 11px rgba(0, 0, 0, 0.09)) drop-shadow(-1px 2px 6px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    background: url(${(props) => props.BackgroundImg }) no-repeat center;
+    background-size: cover;
+    border-radius: 24px 0px 24px 24px;
+    width: 45%;
+    margin-bottom: 40px;
+    padding: 12% 0;
+`;
+
+export const CrossedText = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    h4{
+        position: absolute;
+        background-color: #F9F9F9;
+        padding: 10px;
+    }
+`;
+
+export const Line = styled.hr`
+    width: 100%;
+`

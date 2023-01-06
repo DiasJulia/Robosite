@@ -33,10 +33,17 @@ import MissaoIcon from './missao-icon.svg';
 
 import Arrow1 from './arrow1.svg';
 import Arrow2 from './arrow2.svg';
+import Arrow3 from './arrow3.svg';
 
 import Background1 from './background-1.svg';
 import Background2 from './background-2.png';
 import ModalBackground from './modal-background.png';
+
+import CategoriaSSL from './categoria-SSL.png';
+import CategoriaVSS from './categoria-VSS.png';
+import Categoria2D from './categoria-2D.png';
+
+import Pontos from './pontos.svg';
 
 export { Logo, 
     LogoHorizontal, 
@@ -56,6 +63,7 @@ export { Logo,
     SlidePic3, 
     Arrow1, 
     Arrow2, 
+    Arrow3,
     LogoFacebook, 
     LogoInstagram, 
     LogoYouTube, 
@@ -69,5 +77,9 @@ export { Logo,
     LogoMoura,
     LogoVeroli,
     LogoMicrosoft,
-    LogoCesar
+    LogoCesar,
+    CategoriaSSL,
+    CategoriaVSS,
+    Categoria2D,
+    Pontos
 };
