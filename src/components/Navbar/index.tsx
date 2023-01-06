@@ -5,7 +5,7 @@ import { Logo } from '../../assets';
 import {Link} from 'react-router-dom';
 
 const Navbar: React.FC = () => {
-    const [page, setPage] = useState(window.location.pathname.split('/')[0] || 'home');
+    const [page, setPage] = useState(window.location.pathname.split('/')[1] || 'home');
 
     console.log(page);
     

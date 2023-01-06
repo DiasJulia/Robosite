@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {Arrow3, Categoria2D, CategoriaSSL, CategoriaVSS, Pontos} from '../../assets'
 import {Footer} from '../../components'
 import {Badge, BadgeContainer, CategoriaContainer, CategoriaImg, Container, CrossedText, Details, FirstSection, Line, Row, SubContainer, TableLine} from './styles'
@@ -12,25 +13,31 @@ const CategoriasPage: React.FC = () => {
             <p>Nossas sub-equipes cooperam para administrar, desenvolver e competir em várias categorias diferentes, como SSL, VSSS, Simulação 2D e Drone.</p>
         </FirstSection>
         <Row justifyContent='center'>
+            <a href="#SSL">
             <BadgeContainer>
                 <img src={Pontos} alt="" />
                 <Badge>Small size league</Badge>
             </BadgeContainer>
+            </a>
+            <a href="#VSSS">
             <BadgeContainer>
                 <img src={Pontos} alt="" />
                 <Badge>very Small size league</Badge>
             </BadgeContainer>
+            </a>
+            <a href="#2D">
             <BadgeContainer>
                 <img src={Pontos} alt="" />
                 <Badge>Simulação 2d</Badge>
             </BadgeContainer>
+            </a>
             <BadgeContainer>
                 <img src={Pontos} alt="" />
                 <Badge>drone</Badge>
             </BadgeContainer>
         </Row>
         
-        <SubContainer>
+        <SubContainer id="SSL">
         <hr />
         <br />
             <Row>
@@ -69,7 +76,7 @@ const CategoriasPage: React.FC = () => {
             </Details>
         </SubContainer>
         
-        <SubContainer>
+        <SubContainer id='VSSS'>
         <hr />
         <br />
             <Row>
@@ -125,7 +132,7 @@ const CategoriasPage: React.FC = () => {
             </Details>
         </SubContainer>
 
-        <SubContainer>
+        <SubContainer id="2D">
         <hr />
         <br />
             <Row>
