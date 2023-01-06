@@ -42,4 +42,8 @@ export const Nav = styled.nav`
         color: #469C57;
         text-decoration: none;
     }
+
+    .active a{
+        color: #469C57;
+    }
 `
