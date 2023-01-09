@@ -1,17 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {Arrow3, Categoria2D, CategoriaSSL, CategoriaVSS, Pontos} from '../../assets'
-import {Footer} from '../../components'
+import {Footer, Header} from '../../components'
 import {Badge, BadgeContainer, CategoriaContainer, CategoriaImg, Container, CrossedText, Details, FirstSection, Line, Row, SubContainer, TableLine} from './styles'
 
 
 const CategoriasPage: React.FC = () => {
   return (
     <Container>
-        <FirstSection>
-            <h1>CATEGORIAS</h1>
-            <p>Nossas sub-equipes cooperam para administrar, desenvolver e competir em várias categorias diferentes, como SSL, VSSS, Simulação 2D e Drone.</p>
-        </FirstSection>
+        <Header title="CATEGORIAS" subtitle="Nossas sub-equipes cooperam para administrar, desenvolver e competir em várias categorias diferentes, como SSL, VSSS, Simulação 2D e Drone."/>
         <Row justifyContent='center'>
             <a href="#SSL">
             <BadgeContainer>
