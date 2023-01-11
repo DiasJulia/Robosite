@@ -37,11 +37,14 @@ import Arrow3 from './arrow3.svg';
 
 import Background1 from './background-1.svg';
 import Background2 from './background-2.png';
+import Background3 from './background-3.png';
 import ModalBackground from './modal-background.png';
 
 import CategoriaSSL from './categoria-SSL.png';
 import CategoriaVSS from './categoria-VSS.png';
 import Categoria2D from './categoria-2D.png';
+
+import ProcessTrail from './process-trail.svg';
 
 import Pontos from './pontos.svg';
 
@@ -57,6 +60,7 @@ export { Logo,
     Trophy2, 
     Background1, 
     Background2,
+    Background3,
     ModalBackground, 
     SlidePic1, 
     SlidePic2, 
@@ -81,5 +85,6 @@ export { Logo,
     CategoriaSSL,
     CategoriaVSS,
     Categoria2D,
-    Pontos
+    Pontos,
+    ProcessTrail
 };

@@ -20,8 +20,8 @@ const Navbar: React.FC = () => {
                 <li className={page==="categorias"? 'active': ''} onClick={()=>setPage("categorias")}>
                     <Link to="/categorias">Categorias</Link>
                 </li>
-                <li className={page==="equipe"? 'active': ''} onClick={()=>setPage("")}>
-                    <Link to="/">Equipe</Link>
+                <li className={page==="equipe"? 'active': ''} onClick={()=>setPage("equipe")}>
+                    <Link to="/equipe">Equipe</Link>
                 </li>
                 <li className={page==="publicacoes"? 'active': ''} onClick={()=>setPage("")}>
                     <Link to="/">Publicações</Link>
