@@ -26,8 +26,8 @@ const Navbar: React.FC = () => {
                 <li className={page==="publicacoes"? 'active': ''} onClick={()=>setPage("publicacoes")}>
                     <Link to="/publicacoes">Publicações</Link>
                 </li>
-                <li className={page==="blog"? 'active': ''} onClick={()=>setPage("")} >
-                    <Link to="/">Blog</Link>
+                <li className={page==="blog"? 'active': ''} onClick={()=>setPage("blog")} >
+                    <Link to="/blog">Blog</Link>
                 </li>
             </ul>
         </Nav>

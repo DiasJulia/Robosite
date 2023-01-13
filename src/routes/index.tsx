@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import {CategoriasPage, EquipePage, HomePage, PublicacoesPage} from "../views";
+import {BlogPage, CategoriasPage, EquipePage, HomePage, PublicacoesPage} from "../views";
 
 export const Router = (): JSX.Element => (
   <Routes>
@@ -7,5 +7,6 @@ export const Router = (): JSX.Element => (
     <Route path="/categorias" element={ <CategoriasPage/>}/>
     <Route path="/equipe" element={ <EquipePage/>}/>
     <Route path="/publicacoes" element={ <PublicacoesPage/>}/>
+    <Route path="/blog" element={ <BlogPage/>}/>
   </Routes>
 );
