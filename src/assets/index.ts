@@ -44,6 +44,8 @@ import CategoriaSSL from './categoria-SSL.png';
 import CategoriaVSS from './categoria-VSS.png';
 import Categoria2D from './categoria-2D.png';
 
+import ImagePublicacoes from './image-publicacoes.svg';
+
 import ProcessTrail from './process-trail.svg';
 
 import Pontos from './pontos.svg';
@@ -86,5 +88,6 @@ export { Logo,
     CategoriaVSS,
     Categoria2D,
     Pontos,
+    ImagePublicacoes,
     ProcessTrail
 };
